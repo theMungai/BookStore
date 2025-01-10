@@ -1,0 +1,153 @@
+:root{
+    --header-background : #D9D9D9;
+    --white : #FFFFFF;
+    --orange : rgb(236, 128, 21);
+    --light-orange : rgba(236, 128, 21, 0.781);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+header {
+    width: 100%;
+    background-color: var(--header-background);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .book-store-logo{
+    text-decoration: none;
+    color: #000;
+}
+
+header .nav-links{
+    display: flex;
+    list-style: none;
+}
+
+header .nav-links li {
+    padding: 0px 100px;
+}
+
+header .nav-links li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+header .profile {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-orange);
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+
+main {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+main .homepage-article{
+    margin: 50px 0px;
+    padding: 20px 0px;
+}
+
+main .homepage-article p {
+    width: 90%;
+}
+
+main .search-books{
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+main .search-books input {
+    width: 40%;
+    padding: 10px 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 1rem;
+    border: 2px solid var(--orange);
+}
+
+main .search-books input:focus{
+    border: 1px solid var(--orange);
+    outline: 1px solid var(--orange);
+}
+
+main .search-books .search-icon{
+    background-color: var(--orange);
+    padding: 12px 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+}
+
+main .popular-category,
+main .best-seller-category{
+    margin: 50px 0px;
+}
+
+main .popular-category .popular-category-heading,
+main .best-seller-category .best-seller-heading{
+    padding: 15px 0px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.book-title{
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+.author{
+    font-size: 0.9rem;
+    color: gray;
+}
+
+main #popular-books,
+main #best-seller-books{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .popular-book,
+main .best-seller-book{
+    width: 180px;
+}
+
+main .popular-book img,
+main .best-seller-book img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+footer {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--light-orange);
+}
