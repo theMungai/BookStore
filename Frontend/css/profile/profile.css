@@ -1,0 +1,59 @@
+/*:root{
+    --introduction-container : #D9D9D9;
+    --white : #FFFFFF;
+    --black : #252422;
+    --orange : rgb(236, 128, 21);
+    --light-orange : rgba(236, 128, 21, 0.781);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 2px solid red;
+}
+main {
+    margin: 1rem;
+}
+
+.profile-container {
+    border: 1px solid var(--black);
+    padding: 1rem;
+    height: auto;
+    
+   
+}
+.user-profile {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5rem solid var(--orange);
+    
+}
+.exit-page {
+    position: absolute;
+    top: -1rem;
+    margin-left: -20rem;
+    padding: 1rem;
+}
+
+.profile > * {
+    padding-bottom: 1rem;
+}
+
+.account-settings {
+    padding-top: 1.5rem;
+}
+.change-password {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+.log-out {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}*/
