@@ -1,194 +1,187 @@
-:root{
-    --introduction-container : #D9D9D9;
-    --white : #FFFFFF;
-    --black : #252422;
-    --orange : rgb(236, 128, 21);
-    --light-orange : rgba(236, 128, 21, 0.781);
+:root {
+  --introduction-container: #d9d9d9;
+  --white: #ffffff;
+  --black: #252422;
+  --orange: rgb(236, 128, 21);
+  --light-orange: rgba(236, 128, 21, 0.781);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*outline: 2px solid red;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*outline: 2px solid red;*/
 }
+
 main {
-    color: var(--black);
+  color: var(--black);
 }
 
 /* About Us Section */
-.about-introduction {
-    background-color: var(--introduction-container);
-}
-
-.introduction-container{
-    padding: 1.5rem; 
+.introduction-container {
+  padding: 1.5rem;
+  background-color: var(--introduction-container);
 }
 
 .about-content {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
-.about-content h1{
-    padding-bottom: 1rem;
-    font-size: 34px;
-    position: relative;
+.about-content h1 {
+  padding-bottom: 1rem;
+  font-size: 34px;
+  position: relative;
 }
-.about-content h1::before{
-    content: '│';
-    color: var(--orange);
-    display: inline-block;
-    font-size: 100px;
-    transform: rotate(90deg);
-    position: absolute;
-    margin-left: 8rem;   
+.about-content h1::before {
+  content: "│";
+  color: var(--orange);
+  display: inline-block;
+  font-size: 100px;
+  transform: rotate(90deg);
+  position: absolute;
+  margin-left: 8rem;
 }
 
-.about-content p{
-    padding: 1rem 0;
-    font-size: 26px;
+.about-content p {
+  padding: 1rem 0;
+  font-size: 26px;
 }
 
 .about-btn {
-    padding: 1rem;
-    font-size: 18px;
-    border: none;
-    transition: all 0.3s ease;
-    color: var(--orange);
-    background-color: var(--black);
-    
+  padding: 1rem;
+  font-size: 18px;
+  border: none;
+  transition: all 0.3s ease;
+  color: var(--white);
+  background-color: var(--black);
 }
 .about-btn:hover {
-    cursor: pointer;
-    color: var(--black);
-    background-color: var(--white);
-    
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--white);
 }
 /* Books We Offer Section */
 .books-offered h2 {
-    padding-bottom: 1rem;
-    font-size: 34px;
+  padding-bottom: 1rem;
+  font-size: 34px;
 }
 .books-offered ul {
-    padding-bottom: 1rem;
-    font-size: 28px; 
+  padding-bottom: 1rem;
+  font-size: 28px;
 }
-.books-offered ul li{
-    padding-bottom: 1rem;
-    list-style: none; 
-    text-transform: capitalize;
+.books-offered ul li {
+  padding-bottom: 1rem;
+  list-style: none;
+  text-transform: capitalize;
 }
-.books-offered ul li::before{
-    content: '○';
-    color: var(--white);
-    font-size: 30px;
-    background-color: var(--orange);
-    margin-right: 1rem;
+.books-offered ul li::before {
+  content: "○";
+  color: var(--white);
+  font-size: 30px;
+  background-color: var(--orange);
+  margin-right: 1rem;
 }
 /* Mission, Vision & Why Us Section */
-.info-section{
-    padding: 1.5rem;
+.info-section {
+  padding: 1.5rem;
 }
 .info-body {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
-.info-body h2{
-    font-size: 30px;
-    padding-bottom: 0.6rem;
+.info-body h2 {
+  font-size: 30px;
+  padding-bottom: 0.6rem;
 }
-.info-body p{
-    font-size: 30px;
-    padding-bottom: 0.6rem;
+.info-body p {
+  font-size: 30px;
+  padding-bottom: 0.6rem;
 }
-.info-body ul{
-    font-size: 30px;
-    padding-bottom: 0.6rem;
+.info-body ul {
+  font-size: 30px;
+  padding-bottom: 0.6rem;
 }
-.info-body ul li{
-    list-style: none;
-    padding-bottom: 0.8rem;
+.info-body ul li {
+  list-style: none;
+  padding-bottom: 0.8rem;
 }
 
 /* Large screens */
 @media (min-width: 991px) {
-    /* About Us Section */
-    .introduction-container{
-    padding: 6rem 6rem; 
+  /* About Us Section */
+  
+  .introduction-container {
+    
     display: flex;
     align-items: center;
     gap: 2rem;
     justify-content: space-between;
-}
-.about-content {
-    width: 50%;
-}
-.about-content h1{
+    
+  }
+  .about-content {
+    width: 90%;
+  }
+  .about-content h1 {
     font-size: 70px;
     font-weight: 900;
-    
-}
-.about-content p {
-    padding: 2rem 0 3rem ;
+  }
+  .about-content p {
+    padding: 2rem 0 3rem;
     font-size: 30px;
-}
-.about-btn {
+  }
+  .about-btn {
     padding: 1.5rem;
-    font-size: 20px; 
-}
-.about-content h1{
+    font-size: 20px;
+  }
+  .about-content h1 {
     border-left: 10px solid var(--orange); /*Display a vertical border on the left*/
     padding: 1rem;
     height: 200px;
     position: relative;
     transform: rotate(0deg);
-    vertical-align: middle;    
-       
-}
-.about-content h1::before{    
+    vertical-align: middle;
+  }
+  .about-content h1::before {
     content: none; /*Hide the pseudo-element*/
-   
-}
+  }
 
-/* Books We Offer Section */
-.books-offered{
+  /* Books We Offer Section */
+  .books-offered {
     border: 1px solid var(--white);
     padding: 1rem;
-    height: 500px;
-    
-}
-.books-offered h2 {
+    height: 650px;
+  }
+  .books-offered h2 {
     padding-bottom: 3rem;
     font-size: 36px;
-}
-.books-offered ul {
+  }
+  .books-offered ul {
     padding-bottom: 1.5rem;
-    font-size: 24px; 
-}
-.books-offered ul li{
+    font-size: 24px;
+  }
+  .books-offered ul li {
     padding-bottom: 1.5rem;
-    
-}
-/* Mission, Vision & Why Us Section */
-.info-section{
+  }
+  /* Mission, Vision & Why Us Section */
+  .info-section {
     display: flex;
-    justify-content: space-between;
-    padding: 6rem;
-    gap: 1.5px;
-}
-.info-body {
-    border: 1px solid var(--white);
-    height: auto;
+    padding: 6rem 0 6rem;
+    justify-content: center;
+    gap: 20px;
+  }
+  .info-body {
+    border: 1px solid var(--black);
+    height: 500px;
     width: 400px;
     padding: 0.8rem;
-}
-.info-body h2 {
+  }
+  .info-body h2 {
     text-align: left;
     padding-bottom: 1.5rem;
     color: var(--orange);
-}
-.info-body p {
+  }
+  .info-body p {
     font-size: 20px;
-}
-.info-body ul li {
+  }
+  .info-body ul li {
     font-size: 20px;
-}
+  }
 }
