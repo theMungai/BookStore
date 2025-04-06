@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/Frontend/CSS/home-page.css">
+    <link rel="stylesheet" href="/Frontend/css/home-page.css">
     <title>Book Store | Home</title>
+
+    <!-- =================== JS Links ============================== -->
+    <script src="../js/index.js"></script>
 </head>
 <body>
 
@@ -34,58 +37,15 @@
         </div>
 
         <div class="search-books">
-            <input type="text" placeholder="Search Books">
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+            <input type="text" placeholder="Search Books">           
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
 
         <div class="popular-category">
             <p class="popular-category-heading">Popular Books</p>
-            <div id="popular-books">
-                <div class="popular-book">
-                    <img src="/Frontend/images/Powerful Python.jpeg" alt="">
-                    <p class="book-title">Powerful Python</p>
-                    <p class="author">Aaron Maxwell</p>
-                </div>
+            <ul id="popular-books">
 
-                <div class="popular-book">
-                    <img src="/Frontend/images/Hardware Hacking.jpeg" alt="">
-                    <p class="book-title">The Hardware Hacking Handbook</p>
-                    <p class="author">Jasper Van</p>
-                </div>
-
-                <div class="popular-book">
-                    <img src="/Frontend/images/Hacker.jpeg" alt="">
-                    <p class="book-title">The Anatomy of a Hacker</p>
-                    <p class="author">Tony Smith</p>
-                </div>
-
-                <div class="popular-book">
-                    <img src="/Frontend/images/Eloquent JS.jpeg" alt="">
-                    <p class="book-title">Eloquent JavaScript</p>
-                    <p class="author">Marijn Haverbeke</p>
-                </div>
-
-                <div class="popular-book">
-                    <img src="/Frontend/images/Data science.jpg" alt="">
-                    <p class="book-title">Data Science</p>
-                    <p class="author">John D. Kelleher</p>
-                </div>
-
-                <div class="popular-book">
-                    <img src="/Frontend/images/Computer Architecture.jpeg" alt="">
-                    <p class="book-title">Computer Architecture</p>
-                    <p class="author">Caxton C. Foster</p>
-                </div>
-
-                <div class="popular-book">
-                    <img src="/Frontend/images/ALgorithm.jpg" alt="">
-                    <p class="book-title">50 Algorithms Every Programmer Sholud Know</p>
-                    <p class="author">Imran Ahmad, PhD</p>
-                </div>
-
-            </div>
+            </ul>
         </div>
 
         <div class="best-seller-category">

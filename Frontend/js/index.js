@@ -15,4 +15,32 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdown.classList.remove("show");
     }
   });
+
+  // Fetching books from db.json
+  function fetchBooks(){
+    fetch("http://localhost:3000/books")
+    .then((response) => response.json())
+    .then((books) => displayBooks(books));
+  }
+  fetchBooks()
+
+  // Displaying books in the home-page
+  const booksContainer = document.querySelector("#popular-books")
+  booksContainer.innerHTML = ""
+  function displayBooks(books){
+    books.forEach((book) => {
+      let bookItem = document.createElement("li");
+      bookItem.classList.add("js-book-item")
+      bookItem.innerHTML = `
+        <div class="popular-book">
+          <img src="${book.image_url}" alt="${book.name}">
+          <p class="book-title">${book.name}</p>
+          <p class="author">${book.author}</p>
+        </div>
+      `;
+      booksContainer.appendChild(bookItem)
+        
+    })
+    
+  }
 });
