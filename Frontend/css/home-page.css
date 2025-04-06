@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Urbanist", sans-serif;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 body{
@@ -139,17 +139,22 @@ main #popular-books,
 main #best-seller-books{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
     gap: 2rem;
+    position: relative;
 }
 
 main .popular-book,
 main .best-seller-book{
-    width: 200px;
     margin: 0px auto;
+    width: 100%;
 }
 
 .js-book-item{
     list-style: none;
+    max-width: 200px;
+    height: auto;
+    position: relative;
 }
 
 main .popular-book img,
@@ -215,11 +220,62 @@ footer {
     main #best-seller-books{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
 
-    main .popular-book,
-    main .best-seller-book{
-        width: 160px;
+}
+
+/* ====================== Mobile landscape ========================= */
+@media(min-width:481px) and (max-width:767px){
+
+    header {
+        padding:20px;
     }
+    header .nav-links{
+        display: none;
+    }
+    main {
+        width: 95%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    main .homepage-article{
+        margin: 20px 0px;
+        padding:0px;
+    }
+
+    main .homepage-article h1{
+        font-size: 2rem;
+        padding: 20px 0px;
+    }
+
+    main .homepage-article p {
+        width: 100%;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+
+    main .search-books{
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    main .search-books input {
+        padding: 15px;
+    }
+
+    main .search-books .search-icon{
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    main #popular-books,
+    main #best-seller-books{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+
 }
