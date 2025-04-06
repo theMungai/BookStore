@@ -145,6 +145,11 @@ main #best-seller-books{
 main .popular-book,
 main .best-seller-book{
     width: 200px;
+    margin: 0px auto;
+}
+
+.js-book-item{
+    list-style: none;
 }
 
 main .popular-book img,
