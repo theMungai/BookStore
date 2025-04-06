@@ -164,3 +164,62 @@ footer {
     height: 15rem;
     background-color: var(--light-orange);
 }
+
+/* ====================== Media Queries =========================== */
+/* ====================== Mobile portrait ========================= */
+@media(max-width:480px){
+
+    header {
+        padding:20px;
+    }
+    header .nav-links{
+        display: none;
+    }
+    main {
+        width: 95%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    main .homepage-article{
+        margin: 20px 0px;
+        padding:0px;
+    }
+
+    main .homepage-article h1{
+        font-size: 2rem;
+        padding: 20px 0px;
+    }
+
+    main .homepage-article p {
+        width: 100%;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+
+    main .search-books{
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    main .search-books input {
+        padding: 15px;
+    }
+
+    main .search-books .search-icon{
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    main #popular-books,
+    main #best-seller-books{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    main .popular-book,
+    main .best-seller-book{
+        width: 160px;
+    }
+}
