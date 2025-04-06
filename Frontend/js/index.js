@@ -15,4 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdown.classList.remove("show");
     }
   });
+
+  // Fetching books from db.json
+  function fetchBooks(){
+    fetch("http://localhost:3000/books")
+    .then((response) => response.json())
+    .then((books) => displayBooks(books));
+  }
+  fetchBooks()
+
+  // Displaying books in the home-page
+  function displayBooks(books){
+    console.log(books);
+    
+  }
 });
