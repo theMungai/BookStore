@@ -42,9 +42,12 @@ header a {
 
 header nav{
     width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav ul{
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -118,4 +121,59 @@ main .hero-text button{
     padding: 20px 95px;
     margin: 50px 0px;
     cursor: pointer;
+}
+
+
+/* ====================== Media Queries ======================= */
+/* ====================== Mobile Portrait ===================== */
+@media(max-width:480px){
+    header{
+        padding: 20px 30px;
+    }
+
+    header nav{
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header .user-profile{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;   
+    }
+    
+    main{
+        display: block;
+        margin: 50px auto;
+        width: 95%;
+    }
+    
+    main .hero-text{
+        padding: 15px;
+    }
+    
+    main .hero-text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    main .hero-text p{
+        padding: 20px 0px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    main .hero-text button{
+        font-size: 1.2rem;
+        padding: 15px 50px;
+        margin: 20px auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
