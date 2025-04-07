@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
       }
       else{
-        searchResults.innerHTML = ""
+        searchResults.style.display = "none"
       }
     })
     
