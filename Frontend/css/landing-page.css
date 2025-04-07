@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --header-background : #D9D9D9;
+    --white : #FFFFFF;
+    --orange : rgb(236, 128, 21);
+    --light-orange : rgba(236, 128, 21, 0.781);
+    --text-color: rgba(72, 67, 67, 0.84);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+    /* outline: 2px solid red; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+header{
+    width: 100%;
+    background-color: var(--header-background);
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-span{
+    color: var(--orange);
+}
+
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+header nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li a{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+header nav ul li .nav-link-divider{
+    color: var(--orange);
+    font-size: 1.8rem;
+}
+
+header .user-profile{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 100%;
+    color: var(--orange);
+    font-size: 1.4rem;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    column-gap: 3rem;
+    margin: 100px 70px;
+
+}
+
+main .hero-image{
+    flex-basis: 48%;
+}
+
+main .hero-image img{
+    width: 100%;
+}
+
+main .hero-text{
+    flex-basis: 48%;
+    padding: 30px;
+}
+
+main .hero-text h1{
+    font-size: 3rem;
+}
+
+main .hero-text p{
+    padding: 20px 0px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+main .hero-text button{
+    background-color: var(--light-orange);
+    border: none;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 95px;
+    margin: 50px 0px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 15rem;
+    background-color: var(--light-orange);
+}
+
+/* ====================== Media Queries ======================= */
+/* ====================== Mobile Portrait ===================== */
+@media(max-width:480px){
+    header{
+        padding: 20px 30px;
+    }
+
+    header nav{
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header .user-profile{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;   
+    }
+    
+    main{
+        display: block;
+        margin: 50px auto;
+        width: 95%;
+    }
+    
+    main .hero-text{
+        padding: 15px;
+    }
+    
+    main .hero-text h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    main .hero-text p{
+        padding: 20px 0px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+    
+    main .hero-text button{
+        font-size: 1.2rem;
+        padding: 15px 50px;
+        margin: 20px auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* ====================== Mobile Landscape ===================== */
+@media(min-width:481px) and (max-width:767px){
+    header{
+        padding: 20px 30px;
+    }
+
+    header nav{
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header .user-profile{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;   
+    }
+    
+    main{
+        display: block;
+        margin: 50px auto;
+        width: 95%;
+    }
+    
+    main .hero-text{
+        padding: 15px;
+    }
+    
+    main .hero-text h1{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    
+    main .hero-text p{
+        padding: 20px 0px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    
+    main .hero-text button{
+        font-size: 1.4rem;
+        padding: 15px 70px;
+        margin: 20px auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+/* ====================== Tablet device ===================== */
+@media(min-width:768px) and (max-width:991px){
+    header{
+        padding: 20px 30px;
+    }
+
+    header nav{
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header .user-profile{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;   
+    }
+    
+    main{
+        align-items: center;
+        margin: 60px 20px;
+    }
+    
+    main .hero-text{
+        padding: 15px;
+    }
+    
+    main .hero-text h1{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    
+    main .hero-text p{
+        padding: 20px 0px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    
+    main .hero-text button{
+        font-size: 1.4rem;
+        padding: 15px 70px;
+        margin: 20px auto;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

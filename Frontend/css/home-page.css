@@ -85,19 +85,55 @@ main .homepage-article p {
     font-size: 1.1rem;
 }
 
+main .search-box{
+    margin-bottom: 0px;
+    background-color: var(--white);
+    position: relative;
+    width: 70%;
+}
+
+main .result-box{
+    border-top: 0px solid var(--orange);
+    border-right: 0.5px solid var(--orange);
+    border-bottom: 0.5px solid var(--orange);
+    border-left: 0.5px solid var(--orange);
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    top: 0%;
+    z-index: 10;
+    width: 100%;
+    max-height: 350px;
+    display: none;
+    overflow-y: scroll;
+}
+
+main .result-box{
+    padding: 15px 10px;
+}
+
+.js-searched-book{
+    list-style: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.js-searched-book:hover{
+    background-color: var(--header-background);
+    font-weight: 500;
+}
+
 main .search-books{
-    width: 60%;
-    margin-bottom: 50px;
+    
     padding: 0px;
     display: flex;
     position: relative;
 }
 
 main .search-books input {
-    width: 90%;
+    width: 100%;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 5px;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -108,8 +144,7 @@ main .search-books .search-icon{
     background-color: var(--orange);
     padding: 20px 30px;
     font-size: 1.5rem;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 5px;
     cursor: pointer;
 }
 
@@ -202,9 +237,14 @@ footer {
         font-size: 1rem;
     }
 
+    main .search-box{
+        width: 100%;
+    }
+    
+
     main .search-books{
         width: 100%;
-        margin: 50px 0px;
+        margin: 0px;
     }
 
     main .search-books input {
@@ -256,9 +296,13 @@ footer {
         font-size: 1rem;
     }
 
+    main .search-box{
+        width: 100%;
+    }
+
     main .search-books{
-        width: 80%;
-        margin: 50px auto;
+        width: 100%;
+        margin: 0px;
     }
 
     main .search-books input {
@@ -311,9 +355,13 @@ footer {
         font-size: 1rem;
     }
 
+    main .search-box{
+        width: 100%;
+    }
+
     main .search-books{
-        width: 80%;
-        margin: 50px auto;
+        width: 100%;
+        margin: 0px;
     }
 
     main .search-books input {
