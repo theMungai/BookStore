@@ -5,6 +5,7 @@
     --white : #FFFFFF;
     --orange : rgb(236, 128, 21);
     --light-orange : rgba(236, 128, 21, 0.781);
+    --text-color: rgba(72, 67, 67, 0.84);
 }
 
 *{
@@ -34,6 +35,11 @@ header .logo-span{
     color: var(--orange);
 }
 
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
 header nav{
     width: 60%;
 }
@@ -50,9 +56,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-    text-decoration: none;
     font-size: 1.2rem;
-    color: #222;
     font-weight: 700;
 }
 
@@ -70,5 +74,48 @@ header .user-profile{
     font-size: 1.4rem;
     display: grid;
     place-content: center;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    column-gap: 3rem;
+    margin: 100px 70px;
+
+}
+
+main .hero-image{
+    flex-basis: 48%;
+}
+
+main .hero-image img{
+    width: 100%;
+}
+
+main .hero-text{
+    flex-basis: 48%;
+    padding: 30px;
+}
+
+main .hero-text h1{
+    font-size: 3rem;
+}
+
+main .hero-text p{
+    padding: 20px 0px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+main .hero-text button{
+    background-color: var(--light-orange);
+    border: none;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px 95px;
+    margin: 50px 0px;
     cursor: pointer;
 }
