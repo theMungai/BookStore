@@ -85,31 +85,63 @@ main .homepage-article p {
     font-size: 1.1rem;
 }
 
+main .search-box{
+    margin-bottom: 0px;
+    background-color: var(--white);
+    position: relative;
+    width: 70%;
+}
+
+main .result-box{
+    border: 0.5px solid var(--orange);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    top: 0%;
+    z-index: 10;
+    width: 100%;
+}
+
+main .result-box ul{
+    padding: 15px 10px;
+}
+
+main .result-box ul li{
+    list-style: none;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+main .result-box ul li:hover{
+    background-color: var(--header-background);
+}
+
 main .search-books{
-    width: 60%;
-    margin-bottom: 50px;
+    
     padding: 0px;
     display: flex;
     position: relative;
 }
 
 main .search-books input {
-    width: 90%;
+    width: 100%;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 5px;
     font-size: 1rem;
     border: none;
     outline: none;
     border: 0.5px solid var(--orange);
 }
 
+main .search-books input:focus{
+    border-bottom: none;
+}
+
 main .search-books .search-icon{
     background-color: var(--orange);
     padding: 20px 30px;
     font-size: 1.5rem;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-right-radius: 5px;
     cursor: pointer;
 }
 
